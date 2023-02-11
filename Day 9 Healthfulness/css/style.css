@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+body {
+    font-family: 'Oswald', sans-serif; 
+}
+   
+li {
+    list-style: none;
+    display: inline-block; }
+   
+a {
+    text-decoration: none; 
+}
+   
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff; 
+}
+   /*------------------------------
+    Header
+   ------------------------------*/
+   
+body {
+    background-color: #AAABD3; 
+}
+   
+.page-header {
+    text-align: center;
+    color: #353866;
+    padding: 20px 0; 
+}
+
+.page-header span {
+    color: #bf209f
+}
+
+   /* Nav menu */
+   
+.nav-menu {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fafafa;
+    font-weight:500;
+
+}
+   
+.nav-menu a {
+    color: #353866; 
+}
+  
+
+.nav-menu a:hover {
+    color: #bf209f;
+}
+   
+.nav-menu li {
+    padding: 20px; 
+}
+   /*------------------------------
+    About text
+   ------------------------------*/
+.about-text {
+    padding: 0 50px; }
+.about-text h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: #AAABD3;
+    margin: 30px 0; 
+}
+.about-text p {
+    font-weight: 500;
+    color: #353866;
+    margin-bottom: 10px; 
+}
+.about-text a {
+    color: #AAABD3;
+    font-weight: 700; 
+}
+.about-text a:hover {
+    color: #353866; 
+}
+   /*------------------------------
+    Show food
+   ------------------------------*/
+.show-food {
+    margin-top: 80px;
+    padding: 0 50px; 
+}
+.food {
+    background-color: #353866;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    color: #fff; 
+}
+.food:nth-child(2n) {
+    background-color: #AAABD3; 
+}
+.food .food-text {
+    padding: 20px; 
+}
+.food img {
+    height: 100%;
+}
+.food-text h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.food-text p {
+    font-weight: 400;
+    font-size: 17px;
+}
+   /*------------------------------
+    big image
+   ------------------------------*/
+.big-image {
+    width: 50%;
+    margin: auto;
+}
+.big-image img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+   /*------------------------------
+    Footer
+   ------------------------------*/
+footer {
+    background-color: #AAABD3;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px;
+    font-size: 18px;
+}
