@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+
+body {
+	background:#fe346e;
+	font-size:20px;
+	line-height: 32px;
+	color: #ffffff;
+	word-wrap:break-word !important;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	
+	}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #2c003e;
+	/* letter-spacing: 2px; */
+}	
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	font-family: 'Cormorant Garamond', serif;
+	}
+
+#container {
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+	/* color: #f8f7de; */
+	
+}
+
+nav {
+	margin: 50px 0;
+	background-color: #2c003e;
+}
+
+nav ul {
+	padding: 0;
+  	margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color:#2c003e;
+	}
+.chngcolor :hover{
+	background: #98D6EA;
+}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color:  #d2fafb; 
+	color: #2c003e;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:200px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:200px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+.text{
+
+	text-align: center;
+	margin: 20px;
+	padding: 15px;
+}
+.img{
+	text-align: center;
+	margin: 10px;
+	padding: 15px;
+	object-fit: cover;
+}
+footer {
+	display: flex;
+	width: 100%;
+	color: #2c003e;
+	justify-content: center;
+	font-weight: bolder;
+    font-size: 20px;
+    padding: 15px;
+	font-family: 'Cormorant Garamond', serif;
+}
