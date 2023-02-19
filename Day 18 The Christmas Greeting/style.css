@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+    background: #f9f8eb;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+  }
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    background: url(https://media.giphy.com/media/3oEdv5SY4LBHUBe2o8/giphy.gif);
+    background-size: contain;
+    background-position: top left;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  /* ------------------------------------------------------- */
+
+/* .img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.ptext{
+    color: #fa1616;
+    font-size:xx-large ;
+    font-weight: 900;
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+
+} */
+.flip-box {
+    background-color: transparent;
+    width: 1100px;
+    height: 619px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin:10px 220px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+   
+background: linear-gradient(to top, #b6fbff, #83a4d4); 
+;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .ptext{
+    /* color: #fa1616; */
+    font-size:xx-large ;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+margin-bottom: 40px;
+}
+
+footer {
+    
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	font-weight: bolder;
+    font-size: 15px;
+    padding: 15px;
+}
+
+  
+ 
+
+  /* ---------------------------------------- */
+  
