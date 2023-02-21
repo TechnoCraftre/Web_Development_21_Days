@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+  * {
+    box-sizing: border-box;
+    
+  }
+  
+  /* Style the header */
+  .header {
+    background: linear-gradient(to top, #ddd6f3, #faaca8); 
+    padding: 8px;
+    text-align: center;
+    font-size: xx-large;
+   font-weight: 900;
+    font-family: 'Merienda', cursive;
+  }
+  
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 750px; /* Should be removed. Only for demonstration */
+    object-fit: cover;
+    font-family: 'Actor', sans-serif;
+  }
+
+  .text{
+    display: -webkit-flex;
+    display: flex;
+    order: 2;
+    align-items:  flex-start;
+    flex-direction: column;
+    padding: 90px;
+    text-align: center;
+    font-size: larger;
+    
+  }
+  .t2{
+    justify-content: center;
+    margin-left: 550px;
+    border-bottom: 1px solid #000;
+    width: 150px;
+  }
+  .t1{
+    margin-left: 550px;
+    border-bottom: 1px solid #000;
+    width: 150px;
+  }
+  .col{
+    background: #fbe2e5;
+    flex: 1;
+    font-family: 'Actor', sans-serif;
+  }
+  .services{
+    margin-bottom: 30px;
+  }
+
+.services, .customers{
+    padding: 18px;
+    text-align: center;
+    border: 1px solid #fff;
+  }
+
+.buttons{
+    text-align: center;
+    font-family: 'Actor', sans-serif;
+  }
+  
+  /* ------------------ btn-01 */
+  .btn-02 {
+      background: #c6e2ed;
+      color: #4b7ca7;
+      border: #8bcdea 1px solid;
+      margin-right: 80px;
+  }
+  
+  .btn-02:hover {
+      color: #0097d8;
+  }
+  
+  .btn-02:before,
+  .btn-02:after {
+      background: #8bcdea;
+  }
+  
+  
+  /* ------------------ btn-04 */
+  .btn-03 {
+      background: #c2eddf;
+      color: #009b69;
+      border: #7bdebe 1px solid;
+  }
+  
+  .btn-03:hover {
+      color: #5dc6a4;
+  }
+  
+  .btn-03:before,
+  .btn-03:after {
+      background: #7bdebe;
+  }
+  
+  /* ------------------ 共通 */
+  
+  button:hover {
+      background: #fff;
+      border: #FFF 1px solid;
+  }
+  
+  button:before,
+  button:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 1px;
+      width: 0;
+      transition: 400ms ease all;
+  }
+  
+  button:after {
+      right: inherit;
+      top: inherit;
+      left: 0;
+      bottom: 0;
+  }
+  
+  button {
+      color: #4b7ca7;
+      height: 45px;
+      font-size: 1.6em;
+      border: none;
+      position: relative;
+      letter-spacing: 0.15em;
+      padding: 0 1.5em;
+      cursor: pointer;
+      transition: 800ms ease all;
+      outline: none;
+      margin: 0 10px
+  }
+  
+  button:hover:before,
+  button:hover:after {
+      width: 100%;
+      transition: 800ms ease all;
+  }
+  
+  /* Style the footer */
+  .footer {
+    display: flex;
+    position:absolute;
+    width: 100%;
+    /* background: linear-gradient(to top, #ddd6f3, #faaca8); */
+    padding: 10px;
+    margin-top: 25px;
+    justify-content: center;
+    font-family: 'Actor', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
